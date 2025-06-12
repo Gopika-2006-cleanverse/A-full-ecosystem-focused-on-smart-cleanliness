@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Waste Reporter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1.5rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Waste Reporter</h1>
+    <p>Report Illegal Dumping or Overflowing Bins</p>
+  </header>
+
+  <main>
+    <h2>Report Waste</h2>
+    <form>
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="Enter location or use GPS" />
+
+      <label for="type">Type of Waste</label>
+      <select id="type">
+        <option>Plastic</option>
+        <option>Organic</option>
+        <option>Mixed</option>
+        <option>Electronic</option>
+        <option>Other</option>
+      </select>
+
+      <label for="photo">Upload Photo</label>
+      <input type="file" id="photo" />
+
+      <label for="description">Description</label>
+      <textarea id="description" rows="4" placeholder="Add details..."></textarea>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+
+</body>
+</html>
